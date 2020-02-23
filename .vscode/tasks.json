@@ -1,0 +1,15 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run dev server",
+            "type": "shell",
+            "command": "python ${workspaceRoot}/django_app/manage.py runserver",
+            "windows":{
+                "command": "py ${workspaceRoot}\\django_app\\manage.py runserver"
+            }
+        }
+    ]
+}
